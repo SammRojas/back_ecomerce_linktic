@@ -17,6 +17,9 @@
   <name>back_ecomerce_linktic</name>
   <packaging>pom</packaging>
 
+  <modules>
+    <module>microservice-gateway</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
