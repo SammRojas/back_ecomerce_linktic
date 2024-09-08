@@ -22,6 +22,7 @@
     <module>microservice-eureka</module>
     <module>microservice-config</module>
     <module>microservice-producto</module>
+    <module>microservice-gestion_pedidos</module>
   </modules>
 
   <properties>
