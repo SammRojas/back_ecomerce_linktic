@@ -1,7 +1,7 @@
 package com.microservice.producto.service;
 
 import com.microservice.producto.entities.Producto;
-import com.microservice.producto.persistence.ProductoRepository;
+import com.microservice.producto.persistence.IProductoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class ProductoServiceImpl implements IProductoService{
 
     @Autowired
-    ProductoRepository productoRepository;
+    IProductoRepository productoRepository;
 
     @Override
     public List<Producto> findAll() {
