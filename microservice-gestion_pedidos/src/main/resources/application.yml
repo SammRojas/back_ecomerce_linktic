@@ -7,9 +7,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/productosDb
+    url: jdbc:mysql://localhost:3306/pedidosDb
     username: root
-    password: 1234567
+    password: root
   jpa:
     hibernate:
       ddl-auto: create

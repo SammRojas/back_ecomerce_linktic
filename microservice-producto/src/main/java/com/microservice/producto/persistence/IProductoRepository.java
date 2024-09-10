@@ -12,7 +12,7 @@ public interface IProductoRepository extends JpaRepository<Producto, Long> {
 
     List<Producto> findAllByPedidoId(Long pedidoId);
 
-    @Query("SELECT p FROM tbl_productos p = WHERE p.id = :pedidoId")
+    @Query("SELECT p FROM tbl_productos p = WHERE p.pedido_Id = :pedidoId")
     List<Producto> findAllProductos(Long pedidoId);
 
 }

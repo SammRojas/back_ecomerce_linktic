@@ -14,7 +14,7 @@ import java.util.List;
 @Data
 @Entity
 @Builder
-@Table(name = "pedidos")
+@Table(name = "tbl_pedidos")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Pedido {
@@ -26,9 +26,4 @@ public class Pedido {
         @Column(name = "fecha")
         private Date fecha;
 
-        @Column(name = "total")
-        private BigDecimal total;
-
-        @Column(name = "productos")
-        private List<Producto> productos;
 }
