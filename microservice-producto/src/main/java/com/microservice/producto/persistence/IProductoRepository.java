@@ -10,9 +10,9 @@ import java.util.List;
 @Repository
 public interface IProductoRepository extends JpaRepository<Producto, Long> {
 
-    List<Producto> findOllByPedidoId(Long pedidoId);
+    List<Producto> findAllByPedidoId(Long pedidoId);
 
-    @Query("SELECT p FROM productos p = WHERE p.pedidoId = :pedidoId")
+    @Query("SELECT p FROM tbl_productos p = WHERE p.id = :pedidoId")
     List<Producto> findAllProductos(Long pedidoId);
 
 }
