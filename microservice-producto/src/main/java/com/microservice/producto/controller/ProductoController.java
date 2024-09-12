@@ -32,9 +32,9 @@ public class ProductoController {
         return ResponseEntity.ok(productoService.findAll());
     }
 
-    @GetMapping("search-by-product/{idProduct}")
-    public ResponseEntity<?> findByIdProducto(@PathVariable Long idProducto){
-        return ResponseEntity.ok(productoService.findByIdPedido(idProducto));
+    @GetMapping("search-by-product/{idPedido}")
+    public ResponseEntity<?> findByIdProducto(@PathVariable Long idPedido){
+        return ResponseEntity.ok(productoService.findByIdPedido(idPedido));
     }
 
 

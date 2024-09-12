@@ -31,6 +31,6 @@ public class ProductoServiceImpl implements IProductoService{
 
     @Override
     public List<Producto> findByIdPedido(Long idPedido) {
-        return productoRepository.findAllProductos(idPedido);
+        return productoRepository.findAllByPedidoId(idPedido);
     }
 }
