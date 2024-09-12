@@ -6,7 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -16,6 +16,6 @@ import java.util.List;
 public class ProductByOrderResponse {
 
     private Long id_pedido;
-    private Date fecha;
+    private LocalDateTime fecha;
     private List<ProductoDTO> productoDTOList;
 }

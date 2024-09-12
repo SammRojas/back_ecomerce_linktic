@@ -7,9 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDateTime;
 
 @Data
 @Entity
@@ -24,6 +22,6 @@ public class Pedido {
         private Long id;
 
         @Column(name = "fecha")
-        private Date fecha;
+        private LocalDateTime fecha;
 
 }

@@ -30,7 +30,7 @@ public class PedidoController {
         return  ResponseEntity.ok(pedidosService.findById(id));
     }
 
-    @GetMapping("/search-product/{idPedido}")
+    @GetMapping("/search-by-product/{idPedido}")
     public  ResponseEntity<?> findProductsByIdOrder(@PathVariable Long idPedido){
         return  ResponseEntity.ok(pedidosService.findProductByIdOrder(idPedido));
     }
